@@ -40,7 +40,7 @@ class Configuration implements ConfigurationInterface
                             ->scalarNode('expansion')->defaultValue('list')->end()
                             ->arrayNode('supported_submit_methods')
                                 ->prototype('scalar')->end()
-                                ->defaultValue(array('get', 'post', 'put', 'delete'))
+                                ->defaultValue(array('get', 'post', 'put', 'delete', 'patch'))
                             ->end()
                             ->scalarNode('sorter')->defaultValue(null)->end()
                             ->scalarNode('highlight_size_threshold')->defaultValue(null)->end()
